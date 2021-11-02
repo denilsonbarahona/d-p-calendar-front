@@ -1,0 +1,123 @@
+.calendar-calendar {
+    padding-block-start: 2.5rem;
+    padding-block-end: 2.5rem;
+    padding-inline-end: 1.25rem;
+    padding-inline-start: 1.25rem;
+    background-color: var(--white);
+    inline-size: 20.5rem;
+    block-size: 20.5rem;
+    box-sizing: border-box;
+}
+
+.calendar-year {
+    font: var(--desktop-h5-black);
+    margin:0;
+}
+
+.calendar-action {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center; 
+    margin-block-end: 1rem;
+}
+
+.calendar-month {
+    font: var(--desktop-buttons);
+    margin: 0;
+    padding: 0;
+}
+
+.calendar-button { 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.calendar-button:active {
+    transform: scale(.95);
+}
+
+.calendar-weekday {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.calendar-weekday h4 {
+    font: var(--mobile-body2regular); 
+    font-size: .8rem;
+    text-align: center;
+    margin: 0;
+}
+
+.calendar-monthdays {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.calendar-monthdayitem {
+    cursor: pointer;
+    font: var(--mobile-body2regular); 
+    font-size: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 1.625rem;
+    block-size: 1.625rem; 
+    align-self: center;
+    justify-self: center;
+}
+
+.calendar-monthdayitem--selected{
+    background-color: var(--date-selected);
+    color: var(--primary);
+    border-radius: 50%;
+}
+
+@media screen and (min-width:1024px) {
+    .calendar-calendar {
+        inline-size: 31.125rem;
+        block-size: 31.125rem; 
+        box-sizing: border-box;
+        padding-block-start: 3.8125rem;
+        padding-block-end: 3.8125rem;
+        padding-inline-end: 3.8125rem;
+        padding-inline-start: 3.8125rem;
+    }
+
+    .calendar-year{
+        text-align: center;
+        margin-block-end: 1rem;
+        font: var(--desktop-h3);
+    }
+
+    .calendar-month {
+        font: var(--desktop-body2-bold)
+    }
+
+    .calendar-button {
+        inline-size: 1.5rem;
+        block-size: 1.5rem; 
+    }
+
+    .calendar-button img {
+        inline-size: 100%;
+        block-size: 100%;
+    }
+
+    .calendar-weekday h4 {
+        font: var(--desktop-body3-regular);
+        font-size: 1rem;
+    }
+
+    .calendar-monthdayitem {
+        font:var(--desktop-body2-regular);
+        font-size: .9rem;
+        inline-size: 2.5rem;
+        block-size: 2.5rem; 
+    }
+}

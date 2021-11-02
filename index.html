@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Frontend-calendar</title>
+</head>
+<body>
+    <main class="main">
+        <div class="calendar">
+            <div class="calendar-date">
+                <div role="region" class="calendar-today" aria-label="" aria-live="polite" tabindex="0">
+                    <h1 class="calendar-day" aria-hidden="true"></h1>
+                    <p class="calendar-longdate" aria-hidden="true">
+                        <span class="calendar-span" aria-hidden="true"></span>
+                        <span class="calendar-span" aria-hidden="true"></span>
+                        <span class="calendar-span" aria-hidden="true"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="calendar-calendar">
+                <h2 class="calendar-year"></h2>
+                <div class="calendar-current-important">
+                    <div class="calendar-action">
+                        <buttton tabindex="0" id="prevNavigation" class="calendar-button" title="previous month">
+                            <img src="./assets/svg/l-arrow.svg" aria-hidden="true">
+                        </buttton>
+                        <h3 class="calendar-month" aria-live="assertive"></h3>
+                        <buttton tabindex="0" id="nextNavigation" class="calendar-button" title="next month">
+                            <img src="./assets/svg/r-arrow.svg" aria-hidden="true">
+                        </buttton>
+                    </div>
+                    <div class="calendar-container">
+                        <div class="calendar-weekday">
+                            <h4>SUN</h4>
+                            <h4>MON</h4>
+                            <h4>TUE</h4>
+                            <h4>WED</h4>
+                            <h4>THU</h4>
+                            <h4>FRI</h4>
+                            <h4>SAT</h4>
+                        </div>
+                        <div class="calendar-monthdays">  </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./script/index.js"></script>
+</body>
+</html>

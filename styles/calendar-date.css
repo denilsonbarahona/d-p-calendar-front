@@ -1,0 +1,64 @@
+
+.calendar-date {
+    background-color: var(--black);
+    inline-size: inherit;
+    block-size: 11.875rem; 
+    box-sizing: border-box;
+}
+
+.calendar-today {
+    color: var(--white);
+    text-align: center;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+}
+
+.calendar-day {
+    font: var(--mobile-h1)
+}
+
+.calendar-longdate {
+    font: var(--desktop-h5-medium);
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center; 
+    justify-content: center; 
+}
+
+.calendar-span {
+    position: relative;
+}
+
+.calendar-span:nth-of-type(1)::after,
+.calendar-span:nth-of-type(2)::after {
+   content: "";
+   inline-size: 4px;
+   block-size:  4px;
+   inset-block-start: 50%;
+   inset-inline-end: 0;
+   transform: translateX(calc(1.5rem - 50%));
+   background: var(--white);
+   position: absolute;
+   margin-inline-start: .5rem;
+   margin-inline-end: .5rem;
+   border-radius: 50%;
+}
+
+@media screen and (min-width:1024px) {
+    .calendar-date {
+        inline-size: 31.125rem;
+        block-size: 31.125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .calendar-day {
+        font: var(--desktop-h1)
+    }
+
+    .calendar-longdate {
+        font: var(--desktop-h5-medium);  
+    }
+}

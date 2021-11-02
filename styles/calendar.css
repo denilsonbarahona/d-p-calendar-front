@@ -1,0 +1,18 @@
+@import "./calendar-date.css";
+@import "./calendar-calendar.css";
+
+.calendar {
+    inline-size: 20.5rem; 
+    block-size: 32.375rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (min-width:1024px) {
+    .calendar {
+        flex-direction: row;
+        inline-size: 62.25rem; 
+        block-size: 31.125rem;
+    }
+}

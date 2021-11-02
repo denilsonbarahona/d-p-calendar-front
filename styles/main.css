@@ -1,0 +1,9 @@
+.main {
+    margin: 0;
+    min-inline-size: 20.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 100vh;
+}
